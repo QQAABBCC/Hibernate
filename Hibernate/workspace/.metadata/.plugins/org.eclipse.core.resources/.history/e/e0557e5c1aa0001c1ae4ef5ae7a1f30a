@@ -1,0 +1,31 @@
+package tw.hibernatedemo.action;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import tw.hibernatedemo.model.CompanyBean;
+import tw.hibernatedemo.model.CompanyDAO;
+import tw.hibernatedemo.util.HibernateUtil;
+
+public class DemoCompanyDaoActionEx1 {
+
+	public static void main(String[] args) {
+		SessionFactory factory = HibernateUtil.getSessionFactory();
+		Session session = factory.getCurrentSession();
+		
+		try {
+			session.beginTransaction();
+			
+			
+			CompanyDAO dao = new CompanyDAO(session);
+			dao.insert(new CompanyBean(1003,"twitter"));
+			
+			
+			session.getTransaction().commit();
+		}catch(Exception e){
+			System.out.println("Something wrong and rollback!!");
+			session.getTransaction().rollback();
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+package tw.hibernatedemo.action;
+
+import org.hibernate.Hibernate;
+import org.hibernate.SessionFactory;
+
+import tw.hibernatedemo.util.HibernateUtil;
+
+public class DemoDepartmentActionEx2 {
+
+	public static void main(String[] args) {
+		
+		SessionFactory factory = HibernateUtil.getSessionFactory();
+
+	}
+
+}

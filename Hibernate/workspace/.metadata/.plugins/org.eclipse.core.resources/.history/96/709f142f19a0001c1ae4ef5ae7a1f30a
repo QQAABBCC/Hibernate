@@ -1,0 +1,11 @@
+package tw.hibernatedemo.model;
+
+import java.util.List;
+
+public interface CompanyDAOinterface {
+	CompanyBean insert(CompanyBean comBean);
+	CompanyBean select(int comid);
+	List<CompanyBean>selectAll();
+	CompanyBean updateOne(int comId , String comName);
+	boolean deleteOne(int comId);
+}

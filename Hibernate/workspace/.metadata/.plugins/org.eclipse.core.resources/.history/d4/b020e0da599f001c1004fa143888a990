@@ -1,0 +1,9 @@
+package tw.hibernate.model;
+
+public class CompanyBean {
+
+	public CompanyBean() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

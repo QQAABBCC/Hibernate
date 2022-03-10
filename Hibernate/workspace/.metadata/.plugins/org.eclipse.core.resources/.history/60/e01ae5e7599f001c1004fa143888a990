@@ -1,0 +1,12 @@
+package tw.hibernate.model;
+
+public class CompanyBean {
+
+	private int companyId;
+	private String companeName;
+	
+	public CompanyBean() {
+		
+	}
+
+}

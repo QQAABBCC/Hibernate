@@ -1,0 +1,9 @@
+package tw.hibernatedemo.action;
+
+public class Department {
+
+	public Department() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

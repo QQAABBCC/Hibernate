@@ -1,0 +1,40 @@
+package tw.hibernatedemo.util;
+
+import java.util.List;
+
+import tw.hibernatedemo.model.CompanyBean;
+import tw.hibernatedemo.service.CompanyServiceInterface;
+
+public class CompanyService implements CompanyServiceInterface {
+
+	@Override
+	public CompanyBean select(int comId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<CompanyBean> selectAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CompanyBean insert(CompanyBean comBean) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean delete(int comId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public CompanyBean updateOne(int comId, String conName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
